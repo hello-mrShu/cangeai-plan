@@ -239,13 +239,13 @@ footer{max-width:820px;margin:0 auto;padding:0 18px 60px;color:var(--muted);font
 </tr>
 <tr>
 <td>设备</td>
-<td><strong>手机为主</strong>；老板多一台电脑，但同样不熟</td>
-<td>强判断（决定工具选型）</td>
+<td><strong>手机 + 电脑都会用</strong>（不是"只有手机"）。<strong>电脑是跑 agent 的前提</strong>，很多活最后要落到电脑上</td>
+<td>✅ 老板 2026-10-19 明确纠正</td>
 </tr>
 <tr>
 <td>学历</td>
-<td>不限</td>
-<td>强判断</td>
+<td>不限 —— 但<strong>"不限"不等于"低学历"</strong>。学历不作任何创作依据</td>
+<td>✅ 修正（原"初中文凭"是错误假设）</td>
 </tr>
 <tr>
 <td><strong>真正的共同点</strong></td>
@@ -255,8 +255,13 @@ footer{max-width:820px;margin:0 auto;padding:0 18px 60px;color:var(--muted);font
 </tbody>
 </table>
 <blockquote>
-<p>注意：<strong>收入不是分界线，"用不用电脑/写不写代码"才是。</strong>
+<p>注意：<strong>收入不是分界线，也不是年龄</strong>。真正的分界线是：<strong>他要拿 AI 办事，但他不写代码。</strong>
 一个月薪 4k 的仓管和一个年入百万的厂长，在这件事上是同一种人。</p>
+<p>⚠️ <strong>已删除的错误假设（2026-10-19）</strong>
+本文件早期版本写过「手机为主、很多人没有电脑或不会用电脑」「35–55 岁、初中文凭」。
+<strong>这两句都没有依据，是我自己推的，老板从未这样说。</strong>
+推理链条：10-15 我先写了"初中文凭" → 据此假设受众只有手机 → 把工具主线定成豆包手机版。
+<strong>这条链整条作废。</strong> 真实前提是：<strong>所有 agent 都要在电脑上跑</strong>，所以受众必须会用电脑。</p>
 </blockquote>
 <h4>1.2.2 四类人 ＋ 痛点</h4>
 <table>
@@ -556,26 +561,45 @@ footer{max-width:820px;margin:0 auto;padding:0 18px 60px;color:var(--muted);font
 </tbody>
 </table>
 <p><strong>判断尺子</strong>：把工具名删掉，这条视频还成立吗？<strong>成立＝可以发；不成立＝是教程，别做。</strong></p>
-<h3>4.2 内容结构模板（固定五段，45–75 秒）</h3>
-<figure class="fig">
-<svg viewBox="0 0 340 132" role="img" aria-label="五段结构时间轴">
-  <line x1="14" y1="66" x2="326" y2="66" stroke="#E8A33D" stroke-opacity=".45" stroke-width="2"/>
-  <g font-size="11" fill="currentColor" text-anchor="middle">
-    <circle cx="40"  cy="66" r="7" fill="#D64545"/>
-    <text x="40"  y="44">0–3s</text><text x="40"  y="92">场景</text>
-    <circle cx="105" cy="66" r="7" fill="#D97706"/>
-    <text x="105" y="44">3–15s</text><text x="105" y="92">原来多难</text>
-    <circle cx="170" cy="66" r="7" fill="#E8A33D"/>
-    <text x="170" y="44">15–40s</text><text x="170" y="92">怎么做的</text>
-    <circle cx="235" cy="66" r="7" fill="#65A30D"/>
-    <text x="235" y="44">40–55s</text><text x="235" y="92">效果对比</text>
-    <circle cx="300" cy="66" r="7" fill="#2563EB"/>
-    <text x="300" y="44">55–60s</text><text x="300" y="92">落点</text>
-  </g>
-</svg>
-<figcaption>一条视频＝一件小事＋一句话态度，五段走完 45–75 秒</figcaption>
-</figure>
-
+<h3>4.2 演示工具怎么选（2026-10-19 修正版）</h3>
+<blockquote>
+<p>原规则按"手机/学历"分三层 —— <strong>前提是错的，已废</strong>。
+新规则按<strong>"能不能在电脑上把这件事真的办成"</strong>分。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>工具</th>
+<th>用在哪</th>
+<th>为什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>主线（电脑）</strong></td>
+<td>豆包电脑版 / WorkBuddy / 豆包工作</td>
+<td>真正把活干完：写、改、转、整理、做表</td>
+<td><strong>受众都有电脑</strong>；要在电脑上跑得通，才算"办成了"</td>
+</tr>
+<tr>
+<td><strong>随手（手机）</strong></td>
+<td>豆包 App</td>
+<td>拍图转字、语音转文字、临时问一句</td>
+<td>手机是<strong>入口</strong>，不是终点</td>
+</tr>
+<tr>
+<td><strong>进阶</strong></td>
+<td>Codex / Claude Code</td>
+<td>给"想再往前一步"的人；会员后期交付用</td>
+<td>撑人设，也是会员终点（做出小工具）的兑现工具</td>
+</tr>
+</tbody>
+</table>
+<p><strong>两条不变</strong>：
+1. 一条视频只用<strong>一个</strong>工具，脚本头部标「本条演示工具：XXX」，不许混。
+2. <strong>所有 agent 都要在电脑上跑</strong> —— 这就是为什么"会用电脑"是受众的硬门槛，不是可选项。</p>
+<h3>4.3 内容结构模板（固定五段，45–75 秒）</h3>
 <pre><code>0–3 秒    场景：谁，什么时候，手上拿着什么，卡在哪
 3–15 秒   原来怎么办：不会 / 花钱找人 / 加班到十点
 15–40 秒  现在怎么办：什么工具，三步做完
@@ -587,7 +611,7 @@ footer{max-width:820px;margin:0 auto;padding:0 18px 60px;color:var(--muted);font
 - 禁止："大家好""今天聊聊""我是做软件的"
 - 不加片头，直接进人
 - <strong>前 3 秒不出现"AI"这个词</strong>（封面也不出现）；要提就提工具名（豆包、WorkBuddy）</p>
-<h3>4.3 选题库</h3>
+<h3>4.4 选题库</h3>
 <table>
 <thead>
 <tr>
@@ -616,7 +640,7 @@ footer{max-width:820px;margin:0 auto;padding:0 18px 60px;color:var(--muted);font
 3. 同行爆款（只证明"话题有人看"，不证明"你能讲"）
 4. 季节/节点（前 30 条不用）</p>
 <p><strong>六类动作</strong>：写 / 改 / 抄（图音转字）/ 找 / 算 / 排 —— 一条线只打一个动作，线内换场景。</p>
-<h3>4.4 栏目化（提案，待定）</h3>
+<h3>4.5 栏目化（提案，待定）</h3>
 <table>
 <thead>
 <tr>
@@ -646,10 +670,10 @@ footer{max-width:820px;margin:0 auto;padding:0 18px 60px;color:var(--muted);font
 <blockquote>
 <p>栏目名是提案，<strong>你觉得拗口就直接改</strong>——栏目名好不好记，比准不准更重要。</p>
 </blockquote>
-<h3>4.5 更新频率</h3>
+<h3>4.6 更新频率</h3>
 <p><strong>开更前 2–3 天囤 3–5 条 → 开更后每天 1 条，不断更。</strong>
 不一天发多条（分散发布不加速打标签，只会稀释单条流量池）。</p>
-<h3>4.6 封面与标题规范</h3>
+<h3>4.7 封面与标题规范</h3>
 <table>
 <thead>
 <tr>
@@ -676,13 +700,13 @@ footer{max-width:820px;margin:0 auto;padding:0 18px 60px;color:var(--muted);font
 </tr>
 </tbody>
 </table>
-<h3>4.7 关键词规划</h3>
+<h3>4.8 关键词规划</h3>
 <ul>
 <li>标题/文案埋<strong>场景词</strong>（周报、截图、语音、一寸照、PPT），不埋"AI 教程"</li>
 <li>话题标签带 <code>#AI</code> <code>#效率工具</code> 这类大词吃搜索，但<strong>每条不超过 3 个</strong></li>
 <li>账号名保留 AI —— 那是标签，不是内容</li>
 </ul>
-<h3>4.8 发布设置</h3>
+<h3>4.9 发布设置</h3>
 <table>
 <thead>
 <tr>
